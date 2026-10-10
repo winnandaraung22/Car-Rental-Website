@@ -1,0 +1,1007 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #334155;
+}
+
+.logo {
+	color: #F97316;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation bar */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+nav a.active{
+    font-weight: bold;
+    color: #F97316;
+}
+
+.dropbtn.active{
+    font-weight: bold;
+    color: #F97316;
+}
+
+nav a:hover{
+	color: #F97316;
+	transform: translateY(-3px);
+}
+
+/* dropdown arrow */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a{
+    color: white;
+}
+
+/* Login button */
+.dropbtn {
+    color: black;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 500;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* hidden dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    z-index: 999;
+}
+
+/* show when hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #1F2937;
+}
+
+.dropdown-content a:hover {
+    background-color: #F3F4F6;
+    color: #F97316;
+}
+
+/* arrow style */
+.arrow {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* hero section */
+.hero {
+    height: 80vh;
+    background: url('Images/Carbanner1.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+/* overlay */
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hero content */
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    color: white;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+/* buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.0);
+}
+
+.btn {
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* orange button */
+.btn-primary {
+    background-color: #F97316;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #ea580c;
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+    background-color: #F97316;
+}
+
+.btn-secondary:hover {
+    background-color: #ea580c;
+    transform: translateY(-3px);
+}
+
+/* Car Category Section */
+.vehicle{
+    padding: 20px 60px;
+    margin-top: 30px;
+}
+
+.vehicle h2{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.vehicle p{
+    margin-top: 10px;
+    color: grey;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.photo img{
+    display: flex;
+    width: 22.5%;
+    margin-top: 5px;
+    margin: auto;
+}
+
+.photo div{
+    display: flex;
+}
+
+.photo p{
+    margin: auto;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    padding-top: 10px;
+}
+
+.photo a{
+    margin: auto;
+    font-weight: bold;
+    font-size: 14px;
+    color: #4B5563;
+    padding-top: 10px;
+}
+
+.photo a:hover{
+    color: #EA580C;
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+/* About Us */
+.about{
+    background: white;
+    display: flex;
+    padding: 60px 80px;
+}
+
+.about h2{
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.about1 p{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: justify;
+    font-size: 18px;
+    padding-right: 10px;
+    color: black;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about2 p{
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: justify;
+    font-size: 18px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about1{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about2{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about1 h2{
+    margin-top: 20px;
+
+}
+
+.about2 h2{
+    margin-top: 20px;
+}
+
+.about div{
+    margin-right: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+    color: white;
+    background-color: #334155;
+}
+
+/* Contact Us */
+.contact {
+    background-color: #334155;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Image for Login as Admin */
+/* background image */
+.loginimg {
+    background: url('Images/Carbanner1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+}
+
+/* overlay */
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form box */
+.login-box {
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    height: 48vh;
+
+    /* Transparent background */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+    text-align: left;
+    color: white;
+}
+
+.login-box input{
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+.login-box{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.login-box label{
+    background: transparent;
+    color: white;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.login-box h2{
+    text-align: center;
+    margin: 10px;
+}
+
+/* Button */
+.login-box button {
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+
+    background: #F97316;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background: #ea580c;
+}
+
+/* User Login */
+.userlogin-box{
+    width: 360px;
+    padding: 30px;
+    border-radius: 15px;
+
+    /* Transparent background */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+    text-align: left;
+    color: white;
+}
+
+.userlogin-box h2{
+    text-align: center;
+}
+
+.userlogin-box label{
+    width: 100%;
+    background: transparent;
+    color: white;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.userlogin-box input{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.userlogin-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+
+    background: #F97316;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.userlogin-box button:hover {
+    background: #ea580c;
+}
+
+.userlogin-box p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.userlogin-box a{
+    margin-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+.userlogin-box a:hover{
+    color: #F97316;
+}
+
+/* Registration form */
+.register-box{
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+
+    /* Transparent background */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+    text-align: left;
+    color: white;
+}
+
+.register-box h2{
+    text-align: center;
+}
+
+.register-box label{
+    width: 100%;
+    background: transparent;
+    color: white;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.register-box input{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.register-box select{
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.register-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+
+    background: #F97316;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background: #ea580c;
+}
+
+/* Admin Dashboard Page */
+.dashboard{
+    margin: 0;
+}
+
+.title1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #334155; /*#1f2937 */
+    padding: 15px 30px;
+}
+
+.title2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #F97316;
+}
+
+.admin-info {
+    display: flex;
+    align-items: center;
+}
+
+.admin-info span{
+    color: #F97316;
+}
+
+.admin-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+}
+
+.sidebar {
+    width: 220px; 
+    background: #334155; 
+    color: white; 
+    padding: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Menu links */
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+    background: #ea580c;
+    color: black;
+}
+
+/* Right content */
+.right-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    position: relative;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: url('Images/cardesktop8.jpg') no-repeat center center/cover;
+    height: 20vh;
+    position: relative;
+}
+
+/* Overlay */
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Transparency */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+/* Content above overlay */
+.main-content * {
+    position: relative;
+    z-index: 2;
+}
+
+.main-content p{
+    padding: 15px;
+    text-align: left;
+}
+
+.main-content h2{
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar a.active{
+    background: #F97316;
+}
+
+/* Car Table */
+.car-section{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+}
+.cartable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: white;
+    max-width: 100%;
+}
+
+.cartable th, .cartable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Title inside table */
+.table-title {
+    background: #334155;
+    color: white;
+    font-size: 18px;
+}
+
+/* Header row */
+.cartable tr:nth-child(2) th {
+    background: #334155;
+    color: white;
+}
+
+/* Buttons row */
+.table-buttons {
+    padding: 15px;
+}
+
+/* Buttons */
+.insert {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #F97316;
+    color: white;
+}
+
+.update {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #ea580c;
+    color: white;
+}
+
+.delete {
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: orangered;
+    color: white;
+}
+
+/* Hover */
+.table-buttons input:hover {
+    opacity: 0.8;
+}
+
+/* Car Insert Form */
+.form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form-table {
+    width: 80%;
+    margin: 20px auto;
+    border-spacing: 15px;
+}
+
+.form-table td {
+    vertical-align: top;
+}
+
+.form-table input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button align right */
+.form-btn-right {
+    text-align: right;
+}
+
+.btninsert {
+    background: #F97316;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btninsert:hover {
+    opacity: 0.8;
+}
+
+/* Car Information Page */
+.car-list {
+    width: 80%;
+    margin: 40px auto;
+}
+
+.car-card {
+    display: flex;
+    gap: 20px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Left side image */
+.car-image img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Right side details */
+.car-details {
+    flex: 1;
+}
+
+.car-details h3 {
+    margin-bottom: 10px;
+    color: #1F2937;
+}
+
+.car-details p {
+    margin: 5px 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F97316; /* orange */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover{
+    background-color: #ea580c;
+}
+
+/* Highlight the selected row for update*/
+.selected-row {
+    background-color: #cce5ff;
+}
+
+/* 'Back' button for delete page */
+.btnback{
+    padding: 8px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: orangered;
+    color: white;
+}
+
+.table-buttons a{
+    text-decoration: none;
+}
+
+.table-buttons a:hover{
+    opacity: 0.8;
+}
+
+/* Customer booking */
+.cus-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.customer img{
+    margin-top: 10px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.customer {
+    display: flex;
+    align-items: center;
+}
+
+.customer span{
+    padding: 5px;
+}
+
+.customer a{
+    padding: 5px;
+    justify-content: space-between;
+}
+
+/* Booking Form */
+.mainbox{
+    background: rgba(255,255,255,0.5);
+    padding: 30px;
+    border-radius: 12px;
+    width: 900px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.booking-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* image */
+.car-image img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.booking-form {
+    flex: 1;
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 2 columns */
+.form-columns {
+    display: flex;
+    gap: 20px;
+}
+
+/* each column */
+.form-col {
+    flex: 1;
+}
+
+/* input style */
+.form-col input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* button */
+.btn-book {
+    width: 100%;
+    padding: 10px;
+    background: #ea580c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-book:hover {
+    background: #c2410c;
+}
+
+/* Booking Request Page */
+.sidebar1{
+    width: 220px;
+    min-height: 100vh;
+    background: #334155;
+    color: white;
+    padding: 20px;
+}
+
+.container1{
+     display: flex;
+    align-items: flex-start;
+}
+
+.sidebar1 a{
+     display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar1 a:hover {
+    background: #ea580c;
+    color: black;
+}
+
+.sidebar1 h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidebar1 a.active{
+    background-color: #F97316;
+}
